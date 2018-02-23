@@ -1,8 +1,8 @@
 module.exports =
 
-        __NEXT_REGISTER_PAGE('/', function() {
+        __NEXT_REGISTER_PAGE('/about', function() {
           var comp = 
-      webpackJsonp([4],{
+      webpackJsonp([5],{
 
 /***/ "./node_modules/fbjs/lib/emptyFunction.js":
 /***/ (function(module, exports, __webpack_require__) {
@@ -1541,14 +1541,14 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
+/***/ "./pages/about.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = "/Users/esteladiaz/Desktop/diazela/pages/index.js";
+var _jsxFileName = "/Users/esteladiaz/Desktop/diazela/pages/about.js";
 
 
 (function () {
@@ -1557,7 +1557,7 @@ var _jsxFileName = "/Users/esteladiaz/Desktop/diazela/pages/index.js";
   enterModule && enterModule(module);
 })();
 
-var Index = function Index() {
+var _default = function _default() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     "div",
     {
@@ -1574,12 +1574,11 @@ var Index = function Index() {
           lineNumber: 3
         }
       },
-      "Hello Next.js"
+      "This is the about page"
     )
   );
 };
 
-var _default = Index;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
@@ -1592,8 +1591,7 @@ var _default = Index;
     return;
   }
 
-  reactHotLoader.register(Index, "Index", "/Users/esteladiaz/Desktop/diazela/pages/index.js");
-  reactHotLoader.register(_default, "default", "/Users/esteladiaz/Desktop/diazela/pages/index.js");
+  reactHotLoader.register(_default, "default", "/Users/esteladiaz/Desktop/diazela/pages/about.js");
   leaveModule(module);
 })();
 
@@ -1614,22 +1612,22 @@ var _default = Index;
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about")
   
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/index.js");
+module.exports = __webpack_require__("./pages/about.js");
 
 
 /***/ })
 
-},[2])
+},[3])
           return { page: comp.default }
         })
       ;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=about.js.map

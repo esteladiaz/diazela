@@ -97,6 +97,72 @@ var _default = Header;
 
 /***/ }),
 
+/***/ "./comps/MyLayout.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Header__ = __webpack_require__("./comps/Header.js");
+var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/comps/MyLayout.js';
+
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+
+
+var layoutStyle = {
+  margin: 20,
+  padding: 20,
+  border: '1px solid #DDD'
+};
+
+var Layout = function Layout(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { style: layoutStyle, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      }
+    }),
+    props.children
+  );
+};
+
+var _default = Layout;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(layoutStyle, 'layoutStyle', '/Users/esteladiaz/Desktop/diazela/comps/MyLayout.js');
+  reactHotLoader.register(Layout, 'Layout', '/Users/esteladiaz/Desktop/diazela/comps/MyLayout.js');
+  reactHotLoader.register(_default, 'default', '/Users/esteladiaz/Desktop/diazela/comps/MyLayout.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
 /***/ "./node_modules/babel-runtime/core-js/get-iterator.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10455,60 +10521,54 @@ module.exports = function(module) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_Header__ = __webpack_require__("./comps/Header.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__ = __webpack_require__("./comps/MyLayout.js");
 var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/about.js';
 
 
 (function () {
-  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+   var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
 
-  enterModule && enterModule(module);
+   enterModule && enterModule(module);
 })();
 
 
 
 var _default = function _default() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'div',
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 4
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__comps_Header__["a" /* default */], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 5
-      }
-    }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'p',
+   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__["a" /* default */],
       {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        }
+         __source: {
+            fileName: _jsxFileName,
+            lineNumber: 4
+         }
       },
-      'This is the about page.'
-    )
-  );
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'p',
+         {
+            __source: {
+               fileName: _jsxFileName,
+               lineNumber: 5
+            }
+         },
+         'This is the about page'
+      )
+   );
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
 (function () {
-  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+   var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
 
-  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+   var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
 
-  if (!reactHotLoader) {
-    return;
-  }
+   if (!reactHotLoader) {
+      return;
+   }
 
-  reactHotLoader.register(_default, 'default', '/Users/esteladiaz/Desktop/diazela/pages/about.js');
-  leaveModule(module);
+   reactHotLoader.register(_default, 'default', '/Users/esteladiaz/Desktop/diazela/pages/about.js');
+   leaveModule(module);
 })();
 
 ;

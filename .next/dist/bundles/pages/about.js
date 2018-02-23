@@ -138,6 +138,45 @@ var Header = function Header() {
 
 /***/ }),
 
+/***/ "./comps/MyLayout.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Header__ = __webpack_require__("./comps/Header.js");
+var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/comps/MyLayout.js';
+
+
+
+var layoutStyle = {
+  margin: 20,
+  padding: 20,
+  border: '1px solid #DDD'
+};
+
+var Layout = function Layout(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { style: layoutStyle, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      }
+    }),
+    props.children
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Layout);
+
+/***/ }),
+
 /***/ "./pages/about.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -145,37 +184,31 @@ var Header = function Header() {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_Header__ = __webpack_require__("./comps/Header.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__ = __webpack_require__("./comps/MyLayout.js");
 var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/about.js';
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'div',
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 4
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__comps_Header__["a" /* default */], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 5
-      }
-    }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'p',
+   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__["a" /* default */],
       {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        }
+         __source: {
+            fileName: _jsxFileName,
+            lineNumber: 4
+         }
       },
-      'This is the about page.'
-    )
-  );
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'p',
+         {
+            __source: {
+               fileName: _jsxFileName,
+               lineNumber: 5
+            }
+         },
+         'This is the about page'
+      )
+   );
 });
 
 /***/ }),

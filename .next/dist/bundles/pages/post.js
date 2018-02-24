@@ -177,7 +177,7 @@ var Layout = function Layout(props) {
 
 /***/ }),
 
-/***/ "./pages/about.js":
+/***/ "./pages/post.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -185,11 +185,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__ = __webpack_require__("./comps/MyLayout.js");
-var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/about.js';
+var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/post.js';
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__["a" /* default */],
       {
@@ -199,14 +199,24 @@ var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/about.js';
          }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-         'p',
+         'h1',
          {
             __source: {
                fileName: _jsxFileName,
                lineNumber: 5
             }
          },
-         'This is the about page'
+         props.url.query.title
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'p',
+         {
+            __source: {
+               fileName: _jsxFileName,
+               lineNumber: 6
+            }
+         },
+         'This is the blog post content.'
       )
    );
 });
@@ -216,7 +226,7 @@ var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/about.js';
 /***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/about.js");
+module.exports = __webpack_require__("./pages/post.js");
 
 
 /***/ }),
@@ -236,4 +246,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=about.js.map
+//# sourceMappingURL=post.js.map

@@ -1,6 +1,6 @@
 module.exports =
 
-        __NEXT_REGISTER_PAGE('/about', function() {
+        __NEXT_REGISTER_PAGE('/post', function() {
           var comp = 
       webpackJsonp([5],{
 
@@ -10514,7 +10514,7 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/about.js":
+/***/ "./pages/post.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10522,7 +10522,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__ = __webpack_require__("./comps/MyLayout.js");
-var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/about.js';
+var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/post.js';
 
 
 (function () {
@@ -10533,7 +10533,7 @@ var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/about.js';
 
 
 
-var _default = function _default() {
+var _default = function _default(props) {
    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__["a" /* default */],
       {
@@ -10543,14 +10543,24 @@ var _default = function _default() {
          }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-         'p',
+         'h1',
          {
             __source: {
                fileName: _jsxFileName,
                lineNumber: 5
             }
          },
-         'This is the about page'
+         props.url.query.title
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'p',
+         {
+            __source: {
+               fileName: _jsxFileName,
+               lineNumber: 6
+            }
+         },
+         'This is the blog post content.'
       )
    );
 };
@@ -10567,7 +10577,7 @@ var _default = function _default() {
       return;
    }
 
-   reactHotLoader.register(_default, 'default', '/Users/esteladiaz/Desktop/diazela/pages/about.js');
+   reactHotLoader.register(_default, 'default', '/Users/esteladiaz/Desktop/diazela/pages/post.js');
    leaveModule(module);
 })();
 
@@ -10588,7 +10598,7 @@ var _default = function _default() {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/post")
   
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
@@ -10597,7 +10607,7 @@ var _default = function _default() {
 /***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/about.js");
+module.exports = __webpack_require__("./pages/post.js");
 
 
 /***/ })
@@ -10606,4 +10616,4 @@ module.exports = __webpack_require__("./pages/about.js");
           return { page: comp.default }
         })
       ;
-//# sourceMappingURL=about.js.map
+//# sourceMappingURL=post.js.map

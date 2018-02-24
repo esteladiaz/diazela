@@ -19,6 +19,7 @@
   "homepage": "https://github.com/esteladiaz/diazela#readme",
   "description": "",
   "dependencies": {
+    "express": "^4.16.2",
     "next": "^5.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"

@@ -1,68 +1,39 @@
 import Layout from '../comps/MyLayout.js'
-import Link from 'next/link'
+import Markdown from 'react-markdown'
 
-function getPosts () {
-  return [
-    { id: 'hello-nextjs', title: 'Hello Next.js'},
-    { id: 'learn-nextjs', title: 'Learn Next.js is awesome'},
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT'},
-  ]
-}
-
-const PostLink = ({ post }) => (
-  <li>
-    <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
-      <a>{post.title}</a>
-    </Link>
-    <style jsx>{`
-      li {
-        list-style: none;
-        margin: 5px 0;
-      }
-
-      a {
-        text-decoration: none;
-        color: blue;
-        font-family: "Arial";
-      }
-
-      a:hover {
-        opacity: 0.6;
-      }
-    `}</style>
-  </li>
-)
-
-export default () => (
+export default (props) => (
   <Layout>
-    <h1>My Blog</h1>
-    <ul>
-      {getPosts().map((post) => (
-        <PostLink key={post.id} post={post}/>
-      ))}
-    </ul>
-    <style jsx>{`
-      h1, a {
-        font-family: "Arial";
-      }
+   <h1>{props.url.query.title}</h1>
+   <div className="markdown">
+     <Markdown source={`
+This is our blog post.
+Yes. We can have a [link](/link).
+And we can have a title as well.
 
-      ul {
-        padding: 0;
-      }
+### This is a title
 
-      li {
-        list-style: none;
-        margin: 5px 0;
-      }
+And here's the content.
+     `}/>
+   </div>
+   <style jsx global>{`
+     .markdown {
+       font-family: 'Arial';
+     }
 
-      a {
-        text-decoration: none;
-        color: blue;
-      }
+     .markdown a {
+       text-decoration: none;
+       color: blue;
+     }
 
-      a:hover {
-        opacity: 0.6;
-      }
-    `}</style>
+     .markdown a:hover {
+       opacity: 0.6;
+     }
+
+     .markdown h3 {
+       margin: 0;
+       padding: 0;
+       text-transform: uppercase;
+     }
+  `}</style>
   </Layout>
 )

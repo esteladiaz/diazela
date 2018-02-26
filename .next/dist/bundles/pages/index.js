@@ -67,30 +67,20 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
+/******/ ({
 
-module.exports = require("react");
-
-/***/ }),
-/* 1 */
+/***/ "./comps/Header.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-// EXTERNAL MODULE: external "react"
-var external__react_ = __webpack_require__(0);
-var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
-
-// EXTERNAL MODULE: external "next/link"
-var link_ = __webpack_require__(2);
-var link__default = /*#__PURE__*/__webpack_require__.n(link_);
-
-// CONCATENATED MODULE: ./comps/Header.js
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("next/link");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
+var _jsxFileName = "/Users/esteladiaz/Desktop/diazela/comps/Header.js";
 
 
 
@@ -98,33 +88,64 @@ var linkStyle = {
   marginRight: 15
 };
 
-var Header_Header = function Header() {
-  return external__react__default.a.createElement(
+var Header = function Header() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     "div",
-    null,
-    external__react__default.a.createElement(
-      link__default.a,
-      { href: "/" },
-      external__react__default.a.createElement(
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+      { href: "/", __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "a",
-        { style: linkStyle },
+        { style: linkStyle, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10
+          }
+        },
         "Home"
       )
     ),
-    external__react__default.a.createElement(
-      link__default.a,
-      { href: "/about" },
-      external__react__default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+      { href: "/about", __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "a",
-        { style: linkStyle },
+        { style: linkStyle, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
         "About"
       )
     )
   );
 };
 
-/* harmony default export */ var comps_Header = (Header_Header);
-// CONCATENATED MODULE: ./comps/MyLayout.js
+/* harmony default export */ __webpack_exports__["a"] = (Header);
+
+/***/ }),
+
+/***/ "./comps/MyLayout.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Header__ = __webpack_require__("./comps/Header.js");
+var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/comps/MyLayout.js';
 
 
 
@@ -134,45 +155,41 @@ var layoutStyle = {
   border: '1px solid #DDD'
 };
 
-var MyLayout_Layout = function Layout(props) {
-  return external__react__default.a.createElement(
+var Layout = function Layout(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    { style: layoutStyle },
-    external__react__default.a.createElement(comps_Header, null),
+    { style: layoutStyle, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      }
+    }),
     props.children
   );
 };
 
-/* harmony default export */ var MyLayout = __webpack_exports__["a"] = (MyLayout_Layout);
+/* harmony default export */ __webpack_exports__["a"] = (Layout);
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
 
-module.exports = require("next/link");
-
-/***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(6);
-
-
-/***/ }),
-/* 6 */
+/***/ "./pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__comps_MyLayout_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_markdown__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__comps_MyLayout_js__ = __webpack_require__("./comps/MyLayout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_markdown__ = __webpack_require__("react-markdown");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_markdown___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_markdown__);
+var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/index.js';
 
 
 
@@ -181,39 +198,82 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_2__comps_MyLayout_js__["a" /* default */],
-    null,
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 5
+      }
+    },
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       'h1',
       {
-        className: 'jsx-3267370368'
+        className: 'jsx-3267370368',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        }
       },
       props.url.query.title
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       'div',
       {
-        className: 'jsx-3267370368' + ' ' + 'markdown'
+        className: 'jsx-3267370368' + ' ' + 'markdown',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        }
       },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_markdown___default.a, { source: '\nThis is our blog post.\nYes. We can have a [link](/link).\nAnd we can have a title as well.\n\n### This is a title\n\nAnd here\'s the content.\n     ' })
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_markdown___default.a, { source: '\nThis is our blog post.\nYes. We can have a [link](/about).\nAnd we can have a title as well.\n\n### This is a title\n\nAnd here\'s the content.\n     ', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        }
+      })
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
       styleId: '3267370368',
-      css: ['.markdown{font-family:\'Arial\';}', '.markdown a{text-decoration:none;color:blue;}', '.markdown a:hover{opacity:0.6;}', '.markdown h3{margin:0;padding:0;text-transform:uppercase;}']
+      css: '.markdown{font-family:\'Arial\';}.markdown a{text-decoration:none;color:blue;}.markdown a:hover{opacity:0.6;}.markdown h3{margin:0;padding:0;text-transform:uppercase;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWlCc0IsQUFHNEIsQUFJQyxBQUtULEFBSUgsU0FDQyxHQUpaLE9BSzJCLENBZDNCLENBSWEsV0FDYixZQVVBIiwiZmlsZSI6InBhZ2VzL2luZGV4LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9lc3RlbGFkaWF6L0Rlc2t0b3AvZGlhemVsYSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMYXlvdXQgZnJvbSAnLi4vY29tcHMvTXlMYXlvdXQuanMnXG5pbXBvcnQgTWFya2Rvd24gZnJvbSAncmVhY3QtbWFya2Rvd24nXG5cbmV4cG9ydCBkZWZhdWx0IChwcm9wcykgPT4gKFxuICA8TGF5b3V0PlxuICAgPGgxPntwcm9wcy51cmwucXVlcnkudGl0bGV9PC9oMT5cbiAgIDxkaXYgY2xhc3NOYW1lPVwibWFya2Rvd25cIj5cbiAgICAgPE1hcmtkb3duIHNvdXJjZT17YFxuVGhpcyBpcyBvdXIgYmxvZyBwb3N0LlxuWWVzLiBXZSBjYW4gaGF2ZSBhIFtsaW5rXSgvYWJvdXQpLlxuQW5kIHdlIGNhbiBoYXZlIGEgdGl0bGUgYXMgd2VsbC5cblxuIyMjIFRoaXMgaXMgYSB0aXRsZVxuXG5BbmQgaGVyZSdzIHRoZSBjb250ZW50LlxuICAgICBgfS8+XG4gICA8L2Rpdj5cbiAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgIC5tYXJrZG93biB7XG4gICAgICAgZm9udC1mYW1pbHk6ICdBcmlhbCc7XG4gICAgIH1cblxuICAgICAubWFya2Rvd24gYSB7XG4gICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgIGNvbG9yOiBibHVlO1xuICAgICB9XG5cbiAgICAgLm1hcmtkb3duIGE6aG92ZXIge1xuICAgICAgIG9wYWNpdHk6IDAuNjtcbiAgICAgfVxuXG4gICAgIC5tYXJrZG93biBoMyB7XG4gICAgICAgbWFyZ2luOiAwO1xuICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgICAgfVxuICBgfTwvc3R5bGU+XG4gIDwvTGF5b3V0PlxuKVxuIl19 */\n/*@ sourceURL=pages/index.js */'
     })
   );
 });
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports) {
 
-module.exports = require("styled-jsx/style");
+/***/ 2:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./pages/index.js");
+
 
 /***/ }),
-/* 8 */
+
+/***/ "next/link":
+/***/ (function(module, exports) {
+
+module.exports = require("next/link");
+
+/***/ }),
+
+/***/ "react":
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-markdown":
 /***/ (function(module, exports) {
 
 module.exports = require("react-markdown");
 
+/***/ }),
+
+/***/ "styled-jsx/style":
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
+
 /***/ })
-/******/ ]);
+
+/******/ });
+//# sourceMappingURL=index.js.map

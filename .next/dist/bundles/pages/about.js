@@ -70,27 +70,17 @@ module.exports =
 /******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
+/******/ ({
 
-module.exports = require("react");
-
-/***/ }),
-/* 1 */
+/***/ "./comps/Header.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-// EXTERNAL MODULE: external "react"
-var external__react_ = __webpack_require__(0);
-var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
-
-// EXTERNAL MODULE: external "next/link"
-var link_ = __webpack_require__(2);
-var link__default = /*#__PURE__*/__webpack_require__.n(link_);
-
-// CONCATENATED MODULE: ./comps/Header.js
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("next/link");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
+var _jsxFileName = "/Users/esteladiaz/Desktop/diazela/comps/Header.js";
 
 
 
@@ -98,33 +88,64 @@ var linkStyle = {
   marginRight: 15
 };
 
-var Header_Header = function Header() {
-  return external__react__default.a.createElement(
+var Header = function Header() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     "div",
-    null,
-    external__react__default.a.createElement(
-      link__default.a,
-      { href: "/" },
-      external__react__default.a.createElement(
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+      { href: "/", __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "a",
-        { style: linkStyle },
+        { style: linkStyle, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10
+          }
+        },
         "Home"
       )
     ),
-    external__react__default.a.createElement(
-      link__default.a,
-      { href: "/about" },
-      external__react__default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+      { href: "/about", __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "a",
-        { style: linkStyle },
+        { style: linkStyle, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
         "About"
       )
     )
   );
 };
 
-/* harmony default export */ var comps_Header = (Header_Header);
-// CONCATENATED MODULE: ./comps/MyLayout.js
+/* harmony default export */ __webpack_exports__["a"] = (Header);
+
+/***/ }),
+
+/***/ "./comps/MyLayout.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Header__ = __webpack_require__("./comps/Header.js");
+var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/comps/MyLayout.js';
 
 
 
@@ -134,53 +155,85 @@ var layoutStyle = {
   border: '1px solid #DDD'
 };
 
-var MyLayout_Layout = function Layout(props) {
-  return external__react__default.a.createElement(
+var Layout = function Layout(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    { style: layoutStyle },
-    external__react__default.a.createElement(comps_Header, null),
+    { style: layoutStyle, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      }
+    }),
     props.children
   );
 };
 
-/* harmony default export */ var MyLayout = __webpack_exports__["a"] = (MyLayout_Layout);
+/* harmony default export */ __webpack_exports__["a"] = (Layout);
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
 
-module.exports = require("next/link");
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(4);
-
-
-/***/ }),
-/* 4 */
+/***/ "./pages/about.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__ = __webpack_require__("./comps/MyLayout.js");
+var _jsxFileName = '/Users/esteladiaz/Desktop/diazela/pages/about.js';
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__["a" /* default */],
-      null,
+      {
+         __source: {
+            fileName: _jsxFileName,
+            lineNumber: 4
+         }
+      },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
          'p',
-         null,
+         {
+            __source: {
+               fileName: _jsxFileName,
+               lineNumber: 5
+            }
+         },
          'This is the about page'
       )
    );
 });
 
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./pages/about.js");
+
+
+/***/ }),
+
+/***/ "next/link":
+/***/ (function(module, exports) {
+
+module.exports = require("next/link");
+
+/***/ }),
+
+/***/ "react":
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
 /***/ })
-/******/ ]);
+
+/******/ });
+//# sourceMappingURL=about.js.map

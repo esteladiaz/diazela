@@ -7,7 +7,7 @@ export default (props) => (
    <div className="markdown">
      <Markdown source={`
 This is our blog post.
-Yes. We can have a [link](/link).
+Yes. We can have a [link](/about).
 And we can have a title as well.
 
 ### This is a title

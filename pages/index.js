@@ -36,6 +36,5 @@ And here's the content.
        text-transform: uppercase;
      }
   `}</style>
-  <Link href='/about' as={ process.env.BACKEND_URL + '/about'}><a>About</a></Link>
   </Layout>
 )

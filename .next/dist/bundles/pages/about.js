@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -152,86 +152,35 @@ var MyLayout_Layout = function Layout(props) {
 module.exports = require("next/link");
 
 /***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(6);
+module.exports = __webpack_require__(4);
 
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__comps_MyLayout_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_markdown__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_markdown___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_markdown__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_css__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__ = __webpack_require__(1);
 
 
 
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_2__comps_MyLayout_js__["a" /* default */],
-    null,
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'h1',
-      {
-        className: 'jsx-3267370368'
-      },
-      props.url.query.title
-    ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'div',
-      {
-        className: 'jsx-3267370368' + ' ' + 'markdown'
-      },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_markdown___default.a, { source: '\nThis is our blog post.\nYes. We can have a [link](/about).\nAnd we can have a title as well.\n\n### This is a title\n\nAnd here\'s the content.\n     ' }),
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'p',
-        {
-          className: 'jsx-3267370368' + ' ' + 'example'
-        },
-        'Lorem ipsum test words go here but theyre not rendering because my atom has no react syntax highlighting HALP'
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1__comps_MyLayout_js__["a" /* default */],
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'p',
+         null,
+         'This is the about page'
       )
-    ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-      styleId: '3267370368',
-      css: ['.markdown{font-family:\'Arial\';}', '.markdown a{text-decoration:none;color:blue;}', '.markdown a:hover{opacity:0.6;}', '.markdown h3{margin:0;padding:0;text-transform:uppercase;}']
-    })
-  );
+   );
 });
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = require("styled-jsx/style");
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-markdown");
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"example": "_7yB_VDJh17LbKNedMnRhu"
-};
 
 /***/ })
 /******/ ]);

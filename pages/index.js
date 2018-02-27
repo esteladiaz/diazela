@@ -1,5 +1,6 @@
 import Layout from '../comps/MyLayout.js'
 import Markdown from 'react-markdown'
+import '../style.css'
 
 export default (props) => (
   <Layout>
@@ -14,6 +15,7 @@ And we can have a title as well.
 
 And here's the content.
      `}/>
+     <p className="example">Lorem ipsum test words go here but theyre not rendering because my atom has no react syntax highlighting HALP</p>
    </div>
    <style jsx global>{`
      .markdown {

@@ -229,9 +229,7 @@ module.exports = require("react-markdown");
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = {
-	"example": "_7yB_VDJh17LbKNedMnRhu"
-};
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| .example {\n|   font-size: 50px;\n| }");
 
 /***/ })
 /******/ ]);

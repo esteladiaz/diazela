@@ -1,6 +1,5 @@
 import Layout from '../comps/MyLayout.js'
 import Markdown from 'react-markdown'
-import '../style.css'
 
 export default (props) => (
   <Layout>
